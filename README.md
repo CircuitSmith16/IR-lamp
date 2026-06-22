@@ -1,14 +1,14 @@
 # IR-lamp
-Introduction
+Introduction : 
 This is a remote controlled lamp, that uses an IR sensor for detection. It can be put to use in devices like a night lamp, preventing the need to physically turn off the lamp when not required, allowing you to control the lamp using the remote.
 
-Technical information
+Technical information : 
 Board used - Arduino Leonardo
 Components - SM0038 IR receiver and remote
              5V single channel relay
              230VAC to 5VDC module
 
-Working
+Working : 
 The SM0038 detects IR radiaton in its surroundings. The code converts those detections into values, which is particularly useful as we need only one particular value to perform switching operations. An IR remote emits IR radiation and if its values are decoded, they are unique i.e., specific to each button
 Based on our button preference, the corresponding value for the button is obtained.
 A relay performs switching. When a small DC voltage (5V in this case) is supplied, the relay connects the NO (Normally Open) terminal to the COM (Common) terminal
